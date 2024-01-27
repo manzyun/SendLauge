@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://wqcgwbrqfxl3"]
+
+[node name="Deck" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Container" type="Panel" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Top" type="MarginContainer" parent="HBoxContainer/Control"]
+layout_mode = 2
+
+[node name="hand" type="Button" parent="HBoxContainer/Control/Top"]
+layout_mode = 2
+
+[node name="middle" type="MarginContainer" parent="HBoxContainer/Control"]
+layout_mode = 2
+
+[node name="deck" type="Button" parent="HBoxContainer/Control/middle"]
+layout_mode = 2
